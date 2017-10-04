@@ -1,0 +1,1113 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&subset=latin-ext");
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/screen.scss */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 28, ../sass/screen.scss */
+#document {
+  overflow: hidden;
+}
+/* line 30, ../sass/screen.scss */
+#document #game {
+  display: none;
+}
+
+/* line 35, ../sass/screen.scss */
+.greenbg {
+  background: #189046;
+}
+
+/* line 39, ../sass/screen.scss */
+.yellowbg {
+  background: #fcd504;
+}
+
+/* line 43, ../sass/screen.scss */
+.redbg {
+  background: #e21e26;
+}
+
+/* line 47, ../sass/screen.scss */
+.purplebg {
+  background: #2569b3;
+}
+
+/* line 51, ../sass/screen.scss */
+.green {
+  color: #189046;
+}
+
+/* line 55, ../sass/screen.scss */
+.yellow {
+  color: #fcd504;
+}
+
+/* line 59, ../sass/screen.scss */
+.red {
+  color: #e21e26;
+}
+
+/* line 63, ../sass/screen.scss */
+.purple {
+  color: #2569b3;
+}
+
+@font-face {
+  font-family: 'Monoxil';
+  src: url("../fonts/monoxil.woff2") format("woff2"), url("../fonts/monoxil.woff") format("woff"), url("../fonts/monoxil.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 77, ../sass/screen.scss */
+textarea, input, button {
+  outline: none;
+}
+
+/* line 79, ../sass/screen.scss */
+body {
+  background: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
+@media (max-width: 400px) {
+  /* line 86, ../sass/screen.scss */
+  body.android {
+    font-size: 16px;
+  }
+}
+
+/* line 94, ../sass/screen.scss */
+header,
+h1, h2, h3 {
+  font-family: Monoxil, monospace;
+}
+
+/* line 100, ../sass/screen.scss */
+body.infoOpened #game #sidebar {
+  left: 0;
+}
+
+/* line 105, ../sass/screen.scss */
+#share {
+  display: inline-block;
+  font-family: Monoxil, monospace;
+  font-size: 80%;
+  position: absolute;
+  left: 50%;
+  z-index: 5;
+}
+/* line 114, ../sass/screen.scss */
+#share.show span {
+  top: 27px;
+}
+/* line 119, ../sass/screen.scss */
+#share span {
+  -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: black;
+  color: white;
+  padding: 5px 6px 3px;
+  position: relative;
+  left: -50%;
+  top: -50px;
+}
+
+/* line 131, ../sass/screen.scss */
+#shareMenu {
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: Monoxil, monospace;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  text-transform: uppercase;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* line 149, ../sass/screen.scss */
+#shareMenu.show {
+  left: 0;
+}
+/* line 152, ../sass/screen.scss */
+#shareMenu div {
+  padding: 40px 0;
+  font-size: 200%;
+  position: relative;
+  top: -25px;
+}
+
+/* line 160, ../sass/screen.scss */
+#shareText {
+  font-family: Monoxil, monospace;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  height: 100vh;
+  width: 100vw;
+  z-index: 500;
+  -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: black;
+  color: white;
+}
+/* line 176, ../sass/screen.scss */
+#shareText.show {
+  left: 0;
+}
+/* line 180, ../sass/screen.scss */
+#shareText textarea {
+  border: 0;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  font-size: 120%;
+  font-family: Monoxil, monospace;
+  background: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+/* line 193, ../sass/screen.scss */
+#shareText .button {
+  color: black;
+  background: white;
+  display: inline;
+  padding: 5px 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+/* line 205, ../sass/screen.scss */
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+               supported by Chrome and Opera */
+}
+/* line 220, ../sass/screen.scss */
+#game .about,
+#game .switch {
+  cursor: pointer;
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  z-index: 110;
+}
+/* line 233, ../sass/screen.scss */
+#game #tutorial {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  /* line 233, ../sass/screen.scss */
+  #game #tutorial {
+    font-size: 80%;
+  }
+}
+/* line 246, ../sass/screen.scss */
+#game #tutorial button {
+  font-size: 120%;
+  display: block;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  width: 60%;
+  bottom: 10%;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  background: transparent;
+}
+/* line 258, ../sass/screen.scss */
+#game #tutorial button:focus {
+  outline: none;
+}
+/* line 262, ../sass/screen.scss */
+#game #tutorial button span {
+  display: block;
+  background: black;
+  color: white;
+  margin: 0 auto;
+  padding: 15px 0;
+  max-width: 400px;
+  cursor: pointer;
+}
+/* line 273, ../sass/screen.scss */
+#game #tutorial .slide {
+  display: none;
+  position: absolute;
+  line-height: 140%;
+  top: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10%;
+  transform: translateY(-70%);
+}
+/* line 282, ../sass/screen.scss */
+#game #tutorial .slide img.inline {
+  display: inline-block;
+  max-width: 30px;
+  position: relative;
+  top: 6px;
+  margin-top: -10px;
+}
+/* line 290, ../sass/screen.scss */
+#game #tutorial .slide p {
+  margin-bottom: 20px;
+}
+/* line 292, ../sass/screen.scss */
+#game #tutorial .slide p:last-child {
+  margin-bottom: 0;
+}
+/* line 297, ../sass/screen.scss */
+#game #tutorial .slide:nth-child(1) {
+  display: block;
+}
+/* line 305, ../sass/screen.scss */
+#game .switch {
+  transition: all 0.5s linear;
+}
+/* line 308, ../sass/screen.scss */
+#game .switch.disable {
+  opacity: 0.2;
+}
+/* line 313, ../sass/screen.scss */
+#game .about {
+  right: auto;
+  left: 5%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 125%;
+  width: auto;
+}
+/* line 320, ../sass/screen.scss */
+#game .about .fa-info {
+  padding: 0 5px;
+}
+/* line 325, ../sass/screen.scss */
+#game .progressbar {
+  height: 3vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+/* line 326, ../sass/screen.scss */
+#game .progressbar .sec1 {
+  background: #fcd504;
+}
+/* line 329, ../sass/screen.scss */
+#game .progressbar .sec2 {
+  background: #17a23f;
+}
+/* line 332, ../sass/screen.scss */
+#game .progressbar .sec3 {
+  background: #2569b3;
+}
+/* line 335, ../sass/screen.scss */
+#game .progressbar .sec4 {
+  background: #e21e26;
+}
+/* line 346, ../sass/screen.scss */
+#game .progressbar > div {
+  width: 0%;
+  height: 100%;
+  float: left;
+  -webkit-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* line 357, ../sass/screen.scss */
+#game #sidebar {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  background: white;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 40px;
+  line-height: 1.3em;
+  -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* line 376, ../sass/screen.scss */
+#game #sidebar .closeDialog {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  font-size: 120%;
+}
+/* line 383, ../sass/screen.scss */
+#game #sidebar .close-game,
+#game #sidebar .section-name {
+  font-family: Monoxil, sans-serif;
+  font-size: 150%;
+  margin-bottom: 20px;
+}
+/* line 391, ../sass/screen.scss */
+#game #sidebar .close-game {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 100%;
+  margin-top: 50px;
+}
+/* line 398, ../sass/screen.scss */
+#game #sidebar .close-game i {
+  display: none;
+}
+/* line 403, ../sass/screen.scss */
+#game #sidebar.sec1 {
+  background: #fcd504;
+}
+/* line 406, ../sass/screen.scss */
+#game #sidebar.sec2 {
+  background: #17a23f;
+}
+/* line 409, ../sass/screen.scss */
+#game #sidebar.sec3 {
+  background: #2569b3;
+}
+/* line 412, ../sass/screen.scss */
+#game #sidebar.sec4 {
+  background: #e21e26;
+}
+/* line 417, ../sass/screen.scss */
+#game #sec-select {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+}
+/* line 427, ../sass/screen.scss */
+#game #sec-select .closeDialog {
+  position: fixed !important;
+  top: 2.5%;
+  right: 5%;
+  font-size: 120%;
+  cursor: pointer;
+  z-index: 100;
+  opacity: 0;
+  text-align: center;
+  width: 35px;
+}
+/* line 440, ../sass/screen.scss */
+#game #sec-select .sec-row {
+  font-family: Monoxil, sans-serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 451, ../sass/screen.scss */
+#game #sec-select.row4 .sec-row {
+  width: 100%;
+  height: 25%;
+}
+/* line 458, ../sass/screen.scss */
+#game #sec-select.row3 .sec-row {
+  width: 100%;
+  height: 33.333%;
+}
+/* line 465, ../sass/screen.scss */
+#game #sec-select.row2 .sec-row {
+  width: 100%;
+  height: 50%;
+}
+/* line 472, ../sass/screen.scss */
+#game #sec-select.row1 .sec-row {
+  width: 100%;
+  height: 100%;
+}
+/* line 478, ../sass/screen.scss */
+#game #sec-select .sec1 {
+  background: #fcd504;
+}
+/* line 481, ../sass/screen.scss */
+#game #sec-select .sec2 {
+  background: #17a23f;
+}
+/* line 484, ../sass/screen.scss */
+#game #sec-select .sec3 {
+  background: #2569b3;
+}
+/* line 487, ../sass/screen.scss */
+#game #sec-select .sec4 {
+  background: #e21e26;
+}
+/* line 493, ../sass/screen.scss */
+#game #sec-select.show .sec-row:nth-child(even) {
+  left: 0;
+}
+/* line 496, ../sass/screen.scss */
+#game #sec-select.show .sec-row:nth-child(odd) {
+  right: 0;
+}
+/* line 500, ../sass/screen.scss */
+#game #sec-select.show .closeDialog {
+  opacity: 1;
+}
+/* line 505, ../sass/screen.scss */
+#game #sec-select .closeDialog,
+#game #sec-select .sec-row {
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* line 513, ../sass/screen.scss */
+#game #sec-select .sec-row:nth-child(even) {
+  left: 100%;
+}
+/* line 516, ../sass/screen.scss */
+#game #sec-select .sec-row:nth-child(odd) {
+  right: 100%;
+}
+/* line 522, ../sass/screen.scss */
+#game .counter {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 3%;
+  text-align: center;
+  display: none;
+}
+/* line 531, ../sass/screen.scss */
+#game .yes {
+  display: flex;
+  position: fixed;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: -1;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.2s linear;
+  font-size: 450%;
+  color: white;
+}
+/* line 548, ../sass/screen.scss */
+#game .yes img {
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 556, ../sass/screen.scss */
+#game .noshow {
+  width: 1px;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 565, ../sass/screen.scss */
+#game img {
+  max-width: 100%;
+}
+/* line 571, ../sass/screen.scss */
+#game .info div {
+  position: fixed;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 200%;
+  min-width: 50px;
+  min-height: 50px;
+}
+/* line 582, ../sass/screen.scss */
+#game .info .left,
+#game .info .right {
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+/* line 589, ../sass/screen.scss */
+#game .info.show .left,
+#game .info.show .right {
+  opacity: 1;
+}
+/* line 596, ../sass/screen.scss */
+#game .info .left {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5%;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 603, ../sass/screen.scss */
+#game .info .right {
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 5%;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 613, ../sass/screen.scss */
+#game .in,
+#game .card {
+  -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* line 619, ../sass/screen.scss */
+#game .card {
+  box-sizing: border-box;
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  transform: scale(0, 0);
+}
+/* line 628, ../sass/screen.scss */
+#game .card span {
+  position: absolute;
+  left: 6vw;
+  bottom: 5%;
+  font-size: 80%;
+}
+/* line 635, ../sass/screen.scss */
+#game .card strong {
+  margin-bottom: 2em;
+}
+/* line 639, ../sass/screen.scss */
+#game .card.drag {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+/* line 648, ../sass/screen.scss */
+#game .card .in {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Monoxil, monospace;
+  font-size: 30px;
+  padding-left: 6vw;
+  padding-right: 5vw;
+  line-height: 150%;
+  display: flex;
+  text-align: left;
+  padding-top: 10vh;
+  flex-direction: column;
+  position: relative;
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+/* line 667, ../sass/screen.scss */
+#game .card .in:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+/* line 673, ../sass/screen.scss */
+#game .card .in span.hashtag {
+  display: block;
+  content: "#beentheretogether";
+  position: absolute;
+  right: 5vw;
+  bottom: 5%;
+  font-size: 80%;
+  left: auto;
+}
+@media (max-width: 600px) {
+  /* line 648, ../sass/screen.scss */
+  #game .card .in {
+    font-size: 24px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 648, ../sass/screen.scss */
+  #game .card .in {
+    font-size: 20px;
+  }
+}
+/* line 692, ../sass/screen.scss */
+#game .sec1 .card .in {
+  background: #fcd504;
+}
+/* line 695, ../sass/screen.scss */
+#game .sec2 .card .in {
+  background: #17a23f;
+}
+/* line 698, ../sass/screen.scss */
+#game .sec3 .card .in {
+  background: #2569b3;
+}
+/* line 701, ../sass/screen.scss */
+#game .sec4 .card .in {
+  background: #e21e26;
+}
+/* line 705, ../sass/screen.scss */
+#game .finish,
+#game .section {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+/* line 715, ../sass/screen.scss */
+#game .finish .card,
+#game .section .card {
+  display: none;
+}
+/* line 717, ../sass/screen.scss */
+#game .finish .card:first-child,
+#game .section .card:first-child {
+  display: flex;
+}
+/* line 724, ../sass/screen.scss */
+#game .finish {
+  font-size: 85%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
+}
+/* line 730, ../sass/screen.scss */
+#game .finish h2 {
+  font-size: 150%;
+  margin-bottom: 30px;
+}
+/* line 740, ../sass/screen.scss */
+#game .finish button {
+  margin-top: 50px;
+  font-family: Monoxil, sans-serif;
+  font-size: 120%;
+  border: 0;
+  background: transparent;
+}
+
+/* line 751, ../sass/screen.scss */
+footer {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  line-height: 20px;
+  font-size: 50%;
+  padding: 4px 0;
+  font-family: 'Monoxil';
+}
+@media (min-width: 400px) {
+  /* line 751, ../sass/screen.scss */
+  footer {
+    font-size: 90%;
+  }
+}
+
+/* line 772, ../sass/screen.scss */
+.fa-envelope {
+  right: 40px;
+}
+
+/* line 776, ../sass/screen.scss */
+a {
+  color: black;
+}
+
+/* line 782, ../sass/screen.scss */
+header span, header a {
+  -webkit-transition: background 200ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background 200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* line 788, ../sass/screen.scss */
+header .tiles .row {
+  display: flex;
+  align-items: stretch;
+  height: 25vh;
+}
+/* line 792, ../sass/screen.scss */
+header .tiles .row.second {
+  height: 3vh;
+}
+/* line 794, ../sass/screen.scss */
+header .tiles .row.second span {
+  display: block;
+  height: 100%;
+  width: 50%;
+}
+/* line 802, ../sass/screen.scss */
+header h1 {
+  height: 10vh;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  font-size: 200%;
+  text-transform: uppercase;
+}
+@media (max-width: 400px) {
+  /* line 802, ../sass/screen.scss */
+  header h1 {
+    font-size: 120%;
+    position: relative;
+  }
+}
+/* line 818, ../sass/screen.scss */
+header a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  box-sizing: border-box;
+  padding: 50px 0;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  float: left;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+@media (min-width: 600px) {
+  /* line 818, ../sass/screen.scss */
+  header a {
+    font-size: 200%;
+  }
+  /* line 839, ../sass/screen.scss */
+  header a:hover span {
+    opacity: 1;
+  }
+}
+/* line 845, ../sass/screen.scss */
+header a span {
+  font-size: 50%;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: block;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+/* line 864, ../sass/screen.scss */
+.subpage header .tiles {
+  height: auto;
+}
+/* line 868, ../sass/screen.scss */
+.subpage header a {
+  display: inline-block;
+  height: auto;
+  font-size: 120%;
+}
+@media (max-width: 500px) {
+  /* line 868, ../sass/screen.scss */
+  .subpage header a {
+    font-size: 70%;
+  }
+}
+/* line 877, ../sass/screen.scss */
+.subpage header .row {
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+/* line 888, ../sass/screen.scss */
+.content {
+  clear: both;
+  padding: 20px 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5em;
+  font-size: 90%;
+}
+/* line 897, ../sass/screen.scss */
+.content .juicer-feed .feed-item {
+  width: 50%;
+  float: left !important;
+  padding: 0 5px !important;
+  box-sizing: border-box;
+}
+/* line 902, ../sass/screen.scss */
+.content .juicer-feed .feed-item .j-text {
+  display: none;
+}
+/* line 908, ../sass/screen.scss */
+.content h3 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 150%;
+  text-transform: uppercase;
+}
+/* line 915, ../sass/screen.scss */
+.content.info {
+  display: none;
+}
+/* line 919, ../sass/screen.scss */
+.content h2 {
+  font-size: 130%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  line-height: 1.3em;
+}
+/* line 926, ../sass/screen.scss */
+.content.stories {
+  max-width: 900px;
+}
+/* line 929, ../sass/screen.scss */
+.content.stories .meta {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 932, ../sass/screen.scss */
+.content.stories .meta p {
+  margin-bottom: 20px;
+}
+/* line 936, ../sass/screen.scss */
+.content.stories .meta .showMore {
+  background: black;
+  color: white;
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 5px 15px;
+  font-family: 'Monoxil';
+  text-transform: uppercase;
+  font-size: 80%;
+}
+/* line 953, ../sass/screen.scss */
+.content.downloads .download a {
+  display: inline-block;
+  float: left;
+  width: calc(25% - 40px);
+  margin: 20px;
+}
+/* line 961, ../sass/screen.scss */
+.content.downloads .download .sec1 {
+  background: #fcd504;
+}
+/* line 964, ../sass/screen.scss */
+.content.downloads .download .sec2 {
+  background: #17a23f;
+}
+/* line 967, ../sass/screen.scss */
+.content.downloads .download .sec3 {
+  background: #2569b3;
+}
+/* line 970, ../sass/screen.scss */
+.content.downloads .download .sec4 {
+  background: #e21e26;
+}
+/* line 977, ../sass/screen.scss */
+.content.info {
+  padding-bottom: 50px;
+}
+/* line 982, ../sass/screen.scss */
+.content.info .meta {
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+/* line 987, ../sass/screen.scss */
+.content.info li h2 {
+  cursor: pointer;
+  position: relative;
+}
+@media (max-width: 500px) {
+  /* line 987, ../sass/screen.scss */
+  .content.info li h2 {
+    padding: 0 10px;
+  }
+}
+/* line 993, ../sass/screen.scss */
+.content.info li h2:before {
+  content: "+";
+  position: absolute;
+  left: -10px;
+  top: -2px;
+  font-weight: bold;
+}
+/* line 1003, ../sass/screen.scss */
+.content.info li p {
+  padding: 0 10px;
+}
+
+/* line 1011, ../sass/screen.scss */
+.intro {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 999;
+  font-family: 'Monoxil';
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  box-sizing: border-box;
+  font-size: 200%;
+}
+/* line 1026, ../sass/screen.scss */
+.intro .pick {
+  padding: 40px 0;
+  position: relative;
+  top: -30px;
+}
+
+/* line 1034, ../sass/screen.scss */
+#timeline {
+  margin-bottom: 20px;
+  word-break: break-all;
+}
+/* line 1035, ../sass/screen.scss */
+#timeline li {
+  font-family: 'Monoxil';
+  font-size: 70%;
+  line-height: 1.3em;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+/* line 1044, ../sass/screen.scss */
+#timeline li p {
+  padding: 5px;
+}
+/* line 1048, ../sass/screen.scss */
+#timeline li:nth-of-type(2n+1) {
+  clear: left;
+  padding-right: 5px;
+}
+/* line 1052, ../sass/screen.scss */
+#timeline li:nth-of-type(2n) {
+  padding-left: 5px;
+}
+/* line 1055, ../sass/screen.scss */
+#timeline li img {
+  max-width: 100%;
+}
+/* line 1063, ../sass/screen.scss */
+#timeline:after {
+  content: ".";
+  color: white;
+  display: block;
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+}

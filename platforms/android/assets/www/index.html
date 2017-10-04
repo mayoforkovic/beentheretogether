@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-title" content="Been There Together"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Been There Together"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <script src="bower_components/draggabilly/dist/draggabilly.pkgd.min.js"></script>
+
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <title>Been There Together</title>
+</head>
+<body>
+<div id="document">
+  <div id="share"><span>SHARE</span></div>
+  <div id="shareMenu">
+    <div data-mode="photo"><i class="fa fa-camera" aria-hidden="true"></i> </div>
+    <div data-mode="text"><i class="fa fa-pencil" aria-hidden="true"></i> </div>
+  </div>
+  <div id="shareText">
+    <textarea id="textToShare" placeholder="Sem niečo napíš"></textarea>
+    <div class="button">OK!</div>
+  </div>
+  <div id="game">
+    <div id="sidebar">
+      <span class="closeDialog"><i class="fa fa-times" aria-hidden="true"></i></span>
+      <div class="section-meta">
+        <div class="section-name">Research</div>
+        <div class="section-desc">Questions and tasks to observe and analyze the environment and people around you. Who is currently in your temporary community? How does this place feel?</div>
+      </div>
+
+      <div class="close-game"><i class="fa fa-times" aria-hidden="true"></i>  </div>
+    </div>
+    <div class="switch disable">
+      <img src="images/swap.svg">
+    </div>
+    <div class="about"><i class="fa fa-info" aria-hidden="true"></i> <i class="fa fa-home" aria-hidden="true"></i></div>
+    <div class="yes">
+      <i class="fa fa-check" aria-hidden="true"></i>
+    </div>
+    <div id="sec-select" class="row4">
+      <div class="sec-row sec1" data-section="0">Research</div>
+      <div class="sec-row sec2" data-section="1">Interaction</div>
+      <div class="sec-row sec3" data-section="2">Dialogue</div>
+      <div class="sec-row sec4" data-section="3">Collaboration</div>
+    </div>
+    <div class="info">
+      <div class="left">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <div class="right">
+        <i class="fa fa-check" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="section sec1"></div>
+    <div class="section sec2"></div>
+    <div class="section sec3"></div>
+    <div class="section sec4"></div>
+
+    <div class="finish">
+
+      <button>RESTART GAME</button>
+      <span>to create new deck</span>
+    </div>
+
+    <div id="tutorial">
+      <div class="slide">
+      </div>
+      <div class="slide">
+      </div>
+      <div class="slide">
+      </div>
+
+      <button><span>OK</span></button>
+    </div>
+
+    <div class="counter"></div>
+    <div class="progressbar"><div class="sec1"></div><div class="sec2"></div><div class="sec3"></div><div class="sec4"></div></div>
+  </div>
+
+  <div class="intro"></div>
+  <header>
+
+
+    <h1>Been There Together</h1>
+    <div class="tiles">
+      <div class="row">
+        <a href="#" class="greenbg playbtn">Play</a>
+        <a href="#" class="yellowbg switchbtn">How to</a>
+      </div>
+      <div class="row second">
+        <span class="purplebg"></span>
+        <span class="redbg dotline"></span>
+      </div>
+    </div>
+  </header>
+  <div class="content stories">
+    <h3>Stories</h3>
+    <div class="meta">
+
+    </div>
+
+    <ul id="timeline">
+
+    </ul>
+  </div>
+  <div class="content info">
+    <h3>How To play</h3>
+    <div class="meta">
+    
+    </div>
+    <ul>
+      
+    </ul>
+  </div>
+</div>
+<footer> 2017 &copy; beentheretogether.cards@gmail.com
+  <a href="mailto:beentheretogether.cards@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/Been-There-Together-1583303325043063/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+</footer>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript">
+  app.initialize();
+</script>
+</body>
+
+</html>

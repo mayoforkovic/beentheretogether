@@ -1,0 +1,36 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "cards.beentheretogether.app"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "cards.beentheretogether.app"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "cards.beentheretogether.app"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "cards.beentheretogether.app"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "cards.beentheretogether.app"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "cards.beentheretogether.app"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "cards.beentheretogether.app"
+        }
+    }
+}
